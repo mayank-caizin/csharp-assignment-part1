@@ -39,11 +39,26 @@
                 Console.WriteLine(AreaCalculator.RedAreaOneLiner(r));
             }
         }
+
+        static void CardRankingTest() {
+            string[][] hands = {
+                                 new string[]{ "10h", "Jh", "Qh", "Ah", "Kh" },
+                                 new string[]{ "3h", "5h", "Qs", "9h", "Ad" },
+                                 new string[]{ "10s", "10c", "8d", "10d", "10h" },
+                                 new string[]{ "5h", "8h", "6h", "7h", "9h" },
+                                 new string[]{ "10c", "9c", "9s", "10s", "9h" }
+                               };
+
+            foreach (var h in hands) {
+                Console.WriteLine(CardRanking.PokerHandRanking(h));
+            }
+        }
         static void Main(string[] args)
         {
             // AlphabeticalOrderTest();
             // BinaryClockTest();
-            AreaCalculatorTest();
+            // AreaCalculatorTest();
+            CardRankingTest();
         }
     }
 }
