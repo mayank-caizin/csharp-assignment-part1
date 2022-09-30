@@ -81,11 +81,11 @@
 
             int[] ranks = ranksStr.Select(rank => ConvertRank(rank)).ToArray();
             Array.Sort(ranks);
-            bool straight = CheckStraight(ranks);
+            bool is_straight = CheckStraight(ranks);
 
             if (CheckFlush(suits)) {
-                if (straight && ranks[0] == 10) return "Royal Flush";
-                if (straight) return "Straight Flush";
+                if (is_straight && ranks[0] == 10) return "Royal Flush";
+                if (is_straight) return "Straight Flush";
 
                 return "Flush";
             }
@@ -101,7 +101,7 @@
                         return "Full House";
                 }
 
-                if (straight) return "Straight";
+                if (is_straight) return "Straight";
 
                 if(segments.Count == 3) {
                     if (segments[0].Count == 3 || segments[1].Count == 3 || segments[2].Count == 3)

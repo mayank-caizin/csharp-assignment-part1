@@ -53,12 +53,28 @@
                 Console.WriteLine(CardRanking.PokerHandRanking(h));
             }
         }
+
+        static void CentrifugeProblemTest() {
+            int[][] inputs = {
+                new int[] { 6, 4 },
+                new int[] { 2, 1 },
+                new int[] { 3, 3 },
+                new int[] { 12, 7 },
+                new int[] { 21, 10 },
+                new int[] { 21, 18 }
+            };
+
+            foreach (var input in inputs) {
+                Console.WriteLine(CentrifugeProblem.Centrifuge(input[0], input[1]));
+            }
+        }
         static void Main(string[] args)
         {
             // AlphabeticalOrderTest();
             // BinaryClockTest();
             // AreaCalculatorTest();
-            CardRankingTest();
+            // CardRankingTest();
+            CentrifugeProblemTest();
         }
     }
 }
