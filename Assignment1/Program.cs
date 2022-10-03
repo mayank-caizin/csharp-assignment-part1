@@ -61,7 +61,8 @@
                 new int[] { 3, 3 },
                 new int[] { 12, 7 },
                 new int[] { 21, 10 },
-                new int[] { 21, 18 }
+                new int[] { 21, 18 },
+                new int[] { 21, 19 },
             };
 
             foreach (var input in inputs) {
