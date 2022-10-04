@@ -1,4 +1,4 @@
-﻿namespace Assignment1 {
+﻿namespace CSharp.Assignment.Part1 {
     public class CardRanking {
         //private static void Display(int[] arr) {
         //    foreach(int item in arr) {

@@ -1,4 +1,4 @@
-﻿namespace Assignment1 {
+﻿namespace CSharp.Assignment.Part1 {
     public class BinaryClock {
         private static void Helper(int digit, int lights, string[] result) {
             string binary = Convert.ToString(digit, 2);

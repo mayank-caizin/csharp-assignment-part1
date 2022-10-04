@@ -1,5 +1,4 @@
-﻿namespace Assignment1
-{
+﻿namespace CSharp.Assignment.Part1 {
     internal class Program
     {
         static void AlphabeticalOrderTest() {

@@ -1,4 +1,4 @@
-﻿namespace Assignment1 {
+﻿namespace CSharp.Assignment.Part1 {
     public class AreaCalculator {
         private static double AreaOfTriangle(double b, double h) {
             return (b * h) / 2;

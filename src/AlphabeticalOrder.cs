@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace Assignment1 {
+namespace CSharp.Assignment.Part1 {
     public class AlphabeticalOrder {
         private static bool AppendHelper(int[] freq, ref int i, char ch, StringBuilder res) {
             if (freq[i] <= 0) {
